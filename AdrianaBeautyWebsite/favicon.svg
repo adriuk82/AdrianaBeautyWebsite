@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Salmon Background Gradient -->
+    <linearGradient id="salmonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E88874" />
+      <stop offset="45%" stop-color="#DE7662" />
+      <stop offset="100%" stop-color="#BA4E3B" />
+    </linearGradient>
+
+    <!-- Warm Champagne Gold Gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2CE" />
+      <stop offset="35%" stop-color="#F7D065" />
+      <stop offset="70%" stop-color="#E5A93C" />
+      <stop offset="100%" stop-color="#B87D1A" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#3D1810" flood-opacity="0.25" />
+    </filter>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- App Icon Squircle Background -->
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="url(#salmonGradient)" filter="url(#subtleShadow)" />
+
+  <!-- Outer Elegant Gold Ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#goldGradient)" stroke-width="3" opacity="0.45" />
+
+  <!-- Inner Refined Gold Accent Ring -->
+  <circle cx="256" cy="256" r="172" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6" />
+
+  <!-- Decorative Delicate Beauty Sparkle / Star at top -->
+  <path d="M 256 92 Q 256 108 268 108 Q 256 108 256 124 Q 256 108 244 108 Q 256 108 256 92 Z" fill="url(#goldGradient)" />
+
+  <!-- Monogram AC & Aesthetics Contour Line -->
+  <g id="monogram" transform="translate(0, 8)" filter="url(#glow)">
+    <!-- Letter 'A' (Serif, High-End Haute Couture Style) -->
+    <text x="210" y="305" 
+          font-family="'Cormorant Garamond', 'Didot', 'Bodoni MT', 'Cinzel', Georgia, serif" 
+          font-size="195" 
+          font-weight="600" 
+          letter-spacing="-0.02em"
+          fill="url(#goldGradient)" 
+          text-anchor="middle">A</text>
+
+    <!-- Letter 'C' (Intertwined) -->
+    <text x="305" y="305" 
+          font-family="'Cormorant Garamond', 'Didot', 'Bodoni MT', 'Cinzel', Georgia, serif" 
+          font-size="195" 
+          font-weight="400" 
+          letter-spacing="-0.02em"
+          fill="url(#goldGradient)" 
+          text-anchor="middle"
+          opacity="0.95">C</text>
+
+    <!-- Abstract Aesthetic Facial / Brow Flow Curve Underneath -->
+    <path d="M 160 345 C 210 375, 302 375, 352 345" 
+          fill="none" 
+          stroke="url(#goldGradient)" 
+          stroke-width="3.5" 
+          stroke-linecap="round" 
+          opacity="0.85" />
+
+    <!-- Subtitle: BEAUTY -->
+    <text x="256" y="398" 
+          font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
+          font-size="28" 
+          font-weight="700" 
+          letter-spacing="0.32em" 
+          fill="#FFF4E0" 
+          text-anchor="middle"
+          opacity="0.9">BEAUTY</text>
+  </g>
+</svg>
